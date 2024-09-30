@@ -28,3 +28,26 @@ The **Email Link Scanner** is a Chrome extension designed to improve email secur
 - **User Interface Enhancements**: Further work is needed to improve the interface, particularly in presenting the recommendations in a concise and user-friendly manner.
 - **Caching and Memory Optimization**: Future versions will include enhanced caching mechanisms and local email memory, allowing the extension to recognize and respond to recurring threats more effectively.
 - **Debugging and Error Handling**: Improvements are planned for better debugging tools and error handling, ensuring that users have a seamless experience even in the face of unexpected issues.
+
+---
+## **Screenshots**
+First Version - extract all links from email body and scans in virustotal for risk score
+
+<img src="https://github.com/user-attachments/assets/a905c680-3d45-4d7b-8b06-fcd19d2717fd" alt="image" width="600" height="400" />
+
+Second Version - Added gpt 3.5 AI analysis, recommendations, and highlighting links within email body to alert user of potentially malicious hyperlink.
+
+<img src="https://github.com/user-attachments/assets/6d9104b5-2161-4703-a6f1-e49609451410" alt="image" width="600" height="400" />
+
+Tested using phishing simulation emails
+
+<img src="https://github.com/user-attachments/assets/9fafd142-4c75-41aa-a241-63f29f77850b" alt="image" width="400" height="600" />
+
+Extension Pop Up UI Improvements
+
+![image](https://github.com/user-attachments/assets/75d7c58d-3eaa-45b6-9074-61d8064c0a7d) ![image](https://github.com/user-attachments/assets/e51de55b-b7a5-48dd-a82e-d46ed1a380f1) ![image](https://github.com/user-attachments/assets/b7d85c99-6a30-464c-b00a-a47e390db848)
+
+
+
+
+
