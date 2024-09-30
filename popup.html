@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Link Scanner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Email Link Scanner</h1>
+            <button id="scanButton" class="btn-scan">Scan Email</button>
+        </header>
+        <main id="resultContainer">
+            <div class="initial-message">
+                Click 'Scan Email' to analyze the current email for potential threats.
+            </div>
+            <div id="loadingIndicator" class="loading-indicator hidden">
+                <div class="spinner"></div>
+                <p>Scanning email...</p>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div id="error-message" class="error hidden"></div>
+        </main>
+        <div class="debug-section">
+            <button id="debugButton" class="btn-debug">Debug Storage</button>
+            <button id="clearStorageButton" class="btn-debug">Clear Storage</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+    <script src="debug.js"></script>
+</body>
+</html>
