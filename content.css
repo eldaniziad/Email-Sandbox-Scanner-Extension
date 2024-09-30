@@ -1,0 +1,72 @@
+/* Styles for suspicious links */
+.suspicious-link {
+    background-color: yellow !important;
+    border: 2px solid red !important;
+    padding: 2px 4px !important;
+    position: relative;
+    display: inline-block;
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* Hover effect to show full URL */
+.suspicious-link:hover::after {
+    content: attr(data-full-url);
+    position: absolute;
+    background: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1000;
+    bottom: 100%;
+    left: 0;
+    font-size: 12px;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    max-width: none;
+    width: max-content;
+    overflow: visible;
+    word-break: break-all;
+}
+
+/* Warning icon styles */
+.warning-icon {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+/* Ensure the suspicious link styling doesn't interfere with Gmail's default styles */
+.suspicious-link * {
+    background-color: inherit !important;
+    border: none !important;
+}
+
+/* Adjust padding for links that contain only an image */
+.suspicious-link img {
+    margin: -2px -4px;
+}
+
+/* Ensure the warning icon doesn't break the line */
+.suspicious-link .warning-icon {
+    display: inline;
+}
+
+/* Additional styles to override Gmail's default link styles */
+.suspicious-link:link,
+.suspicious-link:visited,
+.suspicious-link:hover,
+.suspicious-link:active {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+/* Improve visibility of the warning icon on different backgrounds */
+.warning-icon {
+    text-shadow: 
+        -1px -1px 0 #fff,
+         1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+         1px  1px 0 #fff;
+}
