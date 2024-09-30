@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Email Link Scanner",
+    "version": "1.0",
+    "description": "Scans email links for potential threats and provides AI-powered analysis.",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage"
+    ],
+    "host_permissions": [
+      "*://mail.google.com/*"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://mail.google.com/*"],
+        "js": ["content.js"],
+        "css": ["content.css"]
+      }
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
